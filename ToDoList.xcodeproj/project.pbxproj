@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		C1D93DCF28489F79005D909E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DCE28489F79005D909E /* AppDelegate.swift */; };
 		C1D93DD128489F79005D909E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DD028489F79005D909E /* SceneDelegate.swift */; };
-		C1D93DD328489F79005D909E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DD228489F79005D909E /* ViewController.swift */; };
 		C1D93DD628489F79005D909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D93DD428489F79005D909E /* Main.storyboard */; };
 		C1D93DD828489F7E005D909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1D93DD728489F7E005D909E /* Assets.xcassets */; };
 		C1D93DDB28489F7E005D909E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1D93DD928489F7E005D909E /* LaunchScreen.storyboard */; };
+		C1D93DE82848A513005D909E /* ToDoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DE72848A513005D909E /* ToDoListController.swift */; };
+		C1D93DEA2848A5A9005D909E /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DE92848A5A9005D909E /* TaskCell.swift */; };
+		C1D93DED2848A91F005D909E /* TaskComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DEC2848A91F005D909E /* TaskComposite.swift */; };
+		C1D93DF02848D03C005D909E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D93DEF2848D03C005D909E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1D93DCB28489F79005D909E /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D93DCE28489F79005D909E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1D93DD028489F79005D909E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1D93DD228489F79005D909E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1D93DD528489F79005D909E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1D93DD728489F7E005D909E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1D93DDA28489F7E005D909E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1D93DDC28489F7E005D909E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1D93DE72848A513005D909E /* ToDoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListController.swift; sourceTree = "<group>"; };
+		C1D93DE92848A5A9005D909E /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		C1D93DEC2848A91F005D909E /* TaskComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskComposite.swift; sourceTree = "<group>"; };
+		C1D93DEF2848D03C005D909E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		C1D93DCD28489F79005D909E /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				C1D93DCE28489F79005D909E /* AppDelegate.swift */,
+				C1D93DEE2848D02C005D909E /* ForTest */,
+				C1D93DEB2848A909005D909E /* Patterns */,
+				C1D93DE32848A0C0005D909E /* Storyboadrs */,
+				C1D93DE22848A0B2005D909E /* Controllers */,
+				C1D93DE42848A1A6005D909E /* TableViewCells */,
 				C1D93DD028489F79005D909E /* SceneDelegate.swift */,
-				C1D93DD228489F79005D909E /* ViewController.swift */,
-				C1D93DD428489F79005D909E /* Main.storyboard */,
+				C1D93DCE28489F79005D909E /* AppDelegate.swift */,
 				C1D93DD728489F7E005D909E /* Assets.xcassets */,
 				C1D93DD928489F7E005D909E /* LaunchScreen.storyboard */,
 				C1D93DDC28489F7E005D909E /* Info.plist */,
 			);
 			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		C1D93DE22848A0B2005D909E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C1D93DE72848A513005D909E /* ToDoListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C1D93DE32848A0C0005D909E /* Storyboadrs */ = {
+			isa = PBXGroup;
+			children = (
+				C1D93DD428489F79005D909E /* Main.storyboard */,
+			);
+			path = Storyboadrs;
+			sourceTree = "<group>";
+		};
+		C1D93DE42848A1A6005D909E /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C1D93DE92848A5A9005D909E /* TaskCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		C1D93DEB2848A909005D909E /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				C1D93DEC2848A91F005D909E /* TaskComposite.swift */,
+			);
+			path = Patterns;
+			sourceTree = "<group>";
+		};
+		C1D93DEE2848D02C005D909E /* ForTest */ = {
+			isa = PBXGroup;
+			children = (
+				C1D93DEF2848D03C005D909E /* Data.swift */,
+			);
+			path = ForTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1D93DD328489F79005D909E /* ViewController.swift in Sources */,
+				C1D93DEA2848A5A9005D909E /* TaskCell.swift in Sources */,
+				C1D93DF02848D03C005D909E /* Data.swift in Sources */,
+				C1D93DED2848A91F005D909E /* TaskComposite.swift in Sources */,
+				C1D93DE82848A513005D909E /* ToDoListController.swift in Sources */,
 				C1D93DCF28489F79005D909E /* AppDelegate.swift in Sources */,
 				C1D93DD128489F79005D909E /* SceneDelegate.swift in Sources */,
 			);
